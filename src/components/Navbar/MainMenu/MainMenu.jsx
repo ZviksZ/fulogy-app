@@ -1,8 +1,9 @@
-import React     from 'react'
+import React from 'react'
+import style from '../Navbar.module.scss'
 
 export const MainMenu = props => {
    return (
-      <nav>
+      <nav className={style.dropMenu}>
          <ul>
             <li>
                <a href="/">1</a>

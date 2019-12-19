@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import {Logo}            from "../common/Logo/Logo.jsx";
+import {BasketIcon}      from "./BasketIcon/BasketIcon.jsx";
 import {MainMenu}        from "./MainMenu/MainMenu.jsx";
 import style             from './Navbar.module.scss'
 import logo              from '../../assets/images/logo.png'
-import basket              from '../../assets/images/basket.png'
-import HamburgerMenu   from 'react-hamburger-menu'
+import HamburgerMenu     from 'react-hamburger-menu'
 
 export const Navbar = props => {
    const [menuOpen, setMenuOpen] = useState(false)
@@ -17,22 +17,24 @@ export const Navbar = props => {
       <header className={style.header}>
 
          <Logo src={logo}/>
-
-         <a href="#">
-            <img src={basket} alt="basket"/>
-         </a>
+         <BasketIcon />
          
-         <HamburgerMenu
-            isOpen={menuOpen}
-            menuClicked={toggleMenuOpen}
-            width={18}
-            height={15}
-            strokeWidth={2}
-            rotate={0}
-            color='#fff'
-            borderRadius={0}
-            animationDuration={0.5}
-         />
+         <div className={style.burgerWrap}>
+            <HamburgerMenu
+               isOpen={menuOpen}
+               menuClicked={toggleMenuOpen}
+               width={18}
+               height={15}
+               strokeWidth={2}
+               rotate={0}
+               color='#fff'
+               borderRadius={0}
+               animationDuration={0.5}
+               className="mr-5"
+            />
+         </div>
+
+         
 
          {menuOpen && <MainMenu/>}
 
