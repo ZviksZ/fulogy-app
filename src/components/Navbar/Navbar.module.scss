@@ -10,6 +10,9 @@
       color: #fff;
       margin-left: auto;
       margin-right: 30px;
+      svg {
+         font-size: 20px;
+      }
    }
    .burgerWrap {
       cursor: pointer;
@@ -19,5 +22,29 @@
       position: absolute;
       top: 60px;
       right: 0;
+      z-index: 777;
+      ul{
+         li {
+            list-style: none;
+            background: #212121;
+            border-bottom: 1px solid #686868;
+            transition: all 0.5s ease-in;
+            &:hover {
+               background: #2e2e2e;
+            }
+            a {
+               width: 100%;
+               display: inline-block;
+               color: #ffffff;
+               padding: 30px 90px;
+               text-align: center;
+               font-weight: 700;
+               font-size: 18px;
+               &:hover {
+                  text-decoration: none;
+               }
+            }
+         }
+      }
    }
 }

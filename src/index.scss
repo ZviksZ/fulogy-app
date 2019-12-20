@@ -5,3 +5,34 @@ body {
   padding: 0;
 }
 
+
+/*----Main Slider------*/
+
+.carousel-initialized {
+  height: 100%;
+}
+.carousel-dots {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  z-index: 555;
+  li button {
+    &:before {
+      border: 1px solid #fff;
+      content: '';
+      border-radius: 2px;
+      width: 10px;
+      height: 10px;
+    }
+  }
+  li.carousel-dots-active button {
+    &:before {
+      background: #fff;
+      border: 1px solid #fff;
+      content: '';
+      opacity: 1;
+    }
+  }
+}
+
+/*---End-Main Slider-----*/

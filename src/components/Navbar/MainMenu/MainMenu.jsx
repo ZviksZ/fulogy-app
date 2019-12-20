@@ -6,13 +6,28 @@ export const MainMenu = props => {
       <nav className={style.dropMenu}>
          <ul>
             <li>
-               <a href="/">1</a>
+               <a href="/">Обучающее видео</a>
             </li>
             <li>
-               <a href="/">2</a>
+               <a href="/">Оформление заказа</a>
             </li>
             <li>
-               <a href="/">3</a>
+               <a href="/">Оплата</a>
+            </li>
+            <li>
+               <a href="/">Доставка</a>
+            </li>
+            <li>
+               <a href="/">Гарантия</a>
+            </li>
+            <li>
+               <a href="/">Возврат</a>
+            </li>
+            <li>
+               <a href="/">Контакты</a>
+            </li>
+            <li>
+               <a href="/">Партнерам</a>
             </li>
          </ul>
       </nav>

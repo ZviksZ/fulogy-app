@@ -23,8 +23,8 @@ export const Navbar = props => {
             <HamburgerMenu
                isOpen={menuOpen}
                menuClicked={toggleMenuOpen}
-               width={18}
-               height={15}
+               width={22}
+               height={18}
                strokeWidth={2}
                rotate={0}
                color='#fff'
