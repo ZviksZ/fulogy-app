@@ -1,0 +1,35 @@
+.bottomMenu {
+   display: flex;
+   padding: 0 50px;
+   justify-content: space-between;
+   .item {
+      min-height: 150px;
+      list-style: none;
+      border-right: 1px solid #bebebe;
+      border-bottom: 3px solid #00B6FF;
+      width: 13%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      &.itemRed {
+         border-bottom: 3px solid #ff4957;
+      }
+      &.active, &:hover {
+         background: #00B6FF;
+         color: #ffffff;
+         border-bottom: 3px solid #00B6FF;
+      }
+      &:first-child {
+         border-left: 1px solid #bebebe;
+      }
+      span {
+         text-align: center;
+         line-height: 1.1;
+      }
+   }
+}

@@ -12,7 +12,7 @@ const Main = ({construct, setDetailMode, setActiveColor}) => {
       <div className={style.mainBlock}>
          <MainSlider activeColorId={construct.activeColorId}
                      colors={construct.colors}/>
-         <div>
+         <div className={style.mainRight}>
             <MainInfo techSpec={construct.techSpec}/>
             <MainColors setDetailMode={setDetailMode}
                         activeColorId={construct.activeColorId}

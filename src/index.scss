@@ -1,38 +1,23 @@
 @import "~bootstrap/scss/bootstrap";
 
 body {
-  margin: 0;
-  padding: 0;
+    background: #f1f1f1;
+    margin: 0;
+    padding: 0;
 }
-
+.main-content {
+    height: 642px;
+    border-bottom: 1px solid #bebebe;
+}
 
 /*----Main Slider------*/
 
-.carousel-initialized {
-  height: 100%;
+.slide-show .ss-indicators > div > span {
+    border-radius: 2px;
 }
-.carousel-dots {
-  position: absolute;
-  bottom: 24px;
-  left: 0;
-  z-index: 555;
-  li button {
-    &:before {
-      border: 1px solid #fff;
-      content: '';
-      border-radius: 2px;
-      width: 10px;
-      height: 10px;
-    }
-  }
-  li.carousel-dots-active button {
-    &:before {
-      background: #fff;
-      border: 1px solid #fff;
-      content: '';
-      opacity: 1;
-    }
-  }
+.slide-show .ss-images-size img {
+    border-radius: 7px;
 }
+
 
 /*---End-Main Slider-----*/

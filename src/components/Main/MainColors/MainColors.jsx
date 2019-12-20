@@ -1,17 +1,12 @@
-import React            from 'react'
-import {setActiveColor} from "../../../redux/constructReducer.js";
-import {MainColorItem}  from "./MainColorItem/MainColorItem.jsx";
-import style            from '../Main.module.scss'
+import React             from 'react'
+import {MainColorItem}   from "./MainColorItem/MainColorItem.jsx";
+import style             from '../Main.module.scss'
+import {MainColorsTitle} from "./MainColorsTitle/MainColorsTitle.jsx";
 
 export const MainColors = ({activeColorId, colors, setDetailMode,setActiveColor}) => {
    return (
-      <>
-         <h3>
-            <span onClick={() => setDetailMode(true)}>
-               i
-            </span>
-            Выберите цвет сечения
-         </h3>
+      <>         
+         <MainColorsTitle setDetailMode={setDetailMode}/>
 
          <ul className={style.mainColors}>
             {
