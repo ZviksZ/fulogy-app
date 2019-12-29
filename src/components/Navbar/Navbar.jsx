@@ -33,9 +33,7 @@ export const Navbar = props => {
                className="mr-5"
             />
          </div>
-
          
-
          {menuOpen && <MainMenu/>}
 
       </header>

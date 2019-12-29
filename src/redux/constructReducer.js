@@ -55,8 +55,7 @@ const constructReducer = (state = initialState, action) => {
          return {
             ...state,
             activeColorId: action.colorId
-         }
-     
+         }     
       default:
          return state;
    }

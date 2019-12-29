@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 export const BasketIcon = () => (
-   <a href="#" className={style.basket}>
+   <a href="#menu" className={style.basket}>
       <FontAwesomeIcon icon={faShoppingCart} />
    </a>
 )

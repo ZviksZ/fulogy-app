@@ -1,11 +1,10 @@
 import React             from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faCheckSquare}   from '@fortawesome/free-solid-svg-icons'
-import {setActiveColor}  from "../../../../redux/constructReducer.js";
 import style             from '../../Main.module.scss'
 import cn                from "classnames";
 
-export const MainColorItem = ({itemId, previewImg, isActive, colorType,setActiveColor}) => {
+export const MainColorItem = ({itemId, previewImg, isActive, colorType, setActiveColor}) => {
    const changeActiveColor = () => {
       setActiveColor(itemId)
    }

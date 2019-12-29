@@ -1,5 +1,3 @@
-import React from "react";
-
 const SET_CURRENT_TAB = 'fulogy/common/SET_CURRENT_TAB';
 
 let initialState = {
